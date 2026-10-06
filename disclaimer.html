@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer · Hidden Room Stories</title>
+  <meta name="description" content="Disclaimer for Hidden Room Stories — the limits of our liability, accuracy of content, and how we handle external links.">
+  <meta name="author" content="Hidden Room Stories Editorial">
+  <link rel="canonical" href="https://hiddenroomstories.com/disclaimer.html">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Disclaimer · Hidden Room Stories">
+  <meta property="og:description" content="Important legal information about the content, liability, and external links on Hidden Room Stories.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:url" content="https://hiddenroomstories.com/disclaimer.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer — Hidden Room Stories",
+    "description": "Legal disclaimer for Hidden Room Stories, covering accuracy, liability, external links, and professional advice.",
+    "url": "https://hiddenroomstories.com/disclaimer.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hidden Room Stories"
+    }
+  }
+  </script>
+
+  <style>
+    /* ---------- RESET & BASE (consistent with main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fbf9f7;
+      --paper-warm: #f5f1ed;
+      --rule: #e2ddd8;
+      --accent: #9b7b5c;
+      --accent-soft: #c9b29b;
+      --muted: #706b66;
+      --white: #ffffff;
+      --serif: "Georgia", "Times New Roman", "Palatino", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --sidebar-width: 320px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.1rem; font-family: var(--sans); font-weight: 600; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      color: var(--accent);
+      font-size: 1.9rem;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-weight: 500;
+    }
+
+    .logo-text em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      transition: color 0.2s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent-soft);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 30px;
+      padding: 0.4rem 1rem 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: border 0.2s, background 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent-soft);
+      background: var(--paper-warm);
+    }
+
+    .search-icon {
+      font-size: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.4rem 0.7rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar-wrap {
+      display: none;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+    }
+
+    .search-bar-wrap.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 600px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-form input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-form button {
+      padding: 0.7rem 1.6rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-form button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- PAGE MAIN (disclaimer specific) ---------- */
+    .site-main {
+      padding: 3rem 0 5rem;
+    }
+
+    .page-header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .disclaimer-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .disclaimer-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2.5rem 2.2rem;
+    }
+
+    .disclaimer-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1.8rem;
+    }
+
+    .disclaimer-card h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .disclaimer-card h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    .disclaimer-card p,
+    .disclaimer-card li {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    .disclaimer-card ul,
+    .disclaimer-card ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .disclaimer-card li {
+      margin-bottom: 0.4rem;
+    }
+
+    .disclaimer-card a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .disclaimer-card a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .disclaimer-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .highlight-box {
+      background: var(--paper-warm);
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .toc {
+      background: var(--paper-warm);
+      border-radius: 8px;
+      padding: 1.6rem 1.6rem;
+      border: 1px solid var(--rule);
+      position: sticky;
+      top: 100px;
+    }
+
+    .toc h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .toc a {
+      color: var(--ink-soft);
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+      border-left: 2px solid transparent;
+      padding-left: 0.5rem;
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+      border-left-color: var(--accent-soft);
+      padding-left: 0.8rem;
+    }
+
+    .toc .active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--rule);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      color: var(--muted);
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.85rem;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .disclaimer-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .disclaimer-card {
+        padding: 1.8rem 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        gap: 0.5rem;
+      }
+
+      .search-toggle {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    /* utils */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hidden Room Stories home">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Hidden <em>Room</em> Stories</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <span class="search-icon">⌕</span> Search
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar-wrap" id="searchBarWrap">
+    <div class="container">
+      <form class="search-form" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <h1>Disclaimer</h1>
+        <p class="subhead">Important information about the content, liability, and external links on Hidden Room Stories.</p>
+      </div>
+
+      <!-- Layout: content + sticky TOC -->
+      <div class="disclaimer-layout">
+
+        <!-- Main content -->
+        <div class="disclaimer-card">
+          <div class="disclaimer-meta">
+            <span>Last updated: <strong>March 15, 2026</strong></span>
+            <span>Version 2.0</span>
+          </div>
+
+          <div class="highlight-box">
+            <p><strong>Summary:</strong> The content on Hidden Room Stories is for general information and inspiration only. We are not liable for any decisions you make based on it. Always consult a qualified professional for specific advice.</p>
+          </div>
+
+          <h2 id="general-information">1. General information</h2>
+          <p>The information provided by Hidden Room Stories ("we", "our", "us") on <a href="https://hiddenroomstories.com">hiddenroomstories.com</a> (the "Site") is for general informational and inspirational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+          <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.</p>
+
+          <h2 id="external-links">2. External links disclaimer</h2>
+          <p>The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties, or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+          <p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the Site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+
+          <h2 id="professional-advice">3. Not professional advice</h2>
+          <p>The Site cannot and does not contain professional interior design, architectural, legal, or financial advice. The interior design and architecture information is provided for general informational and educational purposes only and is not a substitute for professional advice.</p>
+          <p>Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of professional advice. The use or reliance of any information contained on this Site is solely at your own risk.</p>
+
+          <h3>Design and renovation</h3>
+          <p>Any design ideas, renovation suggestions, or DIY guidance are for inspiration only. Structural changes, electrical work, and plumbing should always be carried out by qualified and licensed professionals in accordance with local building regulations.</p>
+
+          <h2 id="affiliates">4. Affiliates disclaimer</h2>
+          <p>The Site may contain links to affiliate websites, and we may receive an affiliate commission for any purchases made by you on the affiliate website using such links. Our affiliates include, but are not limited to, furniture retailers, home decor brands, and book publishers.</p>
+          <p>We only recommend products and services that we genuinely believe will add value to our readers. However, we are not responsible for the quality, safety, or legality of any products or services offered by third parties.</p>
+
+          <h2 id="testimonials">5. Testimonials disclaimer</h2>
+          <p>The Site may contain testimonials by users of our products and/or services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users, and may not necessarily be representative of all users of our products and/or services.</p>
+          <p>We do not claim, and you should not assume, that all users will have the same experiences. Your individual results may vary.</p>
+
+          <h2 id="errors-omissions">6. Errors and omissions disclaimer</h2>
+          <p>While we have made every attempt to ensure that the information contained in this Site has been obtained from reliable sources, Hidden Room Stories is not responsible for any errors or omissions, or for the results obtained from the use of this information.</p>
+          <p>All information in this Site is provided "as is", with no guarantee of completeness, accuracy, timeliness, or of the results obtained from the use of this information, and without warranty of any kind, express or implied.</p>
+
+          <h2 id="fair-use">7. Fair use disclaimer</h2>
+          <p>This Site may contain copyrighted material the use of which has not always been specifically authorised by the copyright owner. We are making such material available for criticism, comment, news reporting, teaching, scholarship, or research.</p>
+          <p>We believe this constitutes a "fair use" of any such copyrighted material as provided for in section 107 of the US Copyright Law and equivalent provisions in other jurisdictions. If you wish to use copyrighted material from this Site for purposes of your own that go beyond fair use, you must obtain permission from the copyright owner.</p>
+
+          <h2 id="views-expressed">8. Views expressed disclaimer</h2>
+          <p>The views and opinions expressed on this Site are those of the authors and do not necessarily reflect the official policy or position of Hidden Room Stories or any of its affiliates. Any content provided by our bloggers or authors is of their opinion and is not intended to malign any religion, ethnic group, club, organisation, company, individual, or anyone or anything.</p>
+
+          <h2 id="consent">9. Consent</h2>
+          <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+
+          <h2 id="updates">10. Updates</h2>
+          <p>Should we update, amend, or make any changes to this document, those changes will be prominently posted here. We encourage you to review this page periodically to stay informed.</p>
+
+          <h2 id="contact">11. Contact us</h2>
+          <p>If you have any questions about this Disclaimer, please contact us:</p>
+          <ul>
+            <li>Email: <a href="mailto:legal@hiddenroomstories.com">legal@hiddenroomstories.com</a></li>
+            <li>Post: Hidden Room Stories, 14 Alder Lane, Studio 3, London, E2 8HD, United Kingdom</li>
+          </ul>
+
+          <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted);"><em>This disclaimer was last updated on March 15, 2026.</em></p>
+        </div>
+
+        <!-- Sidebar: Table of Contents (sticky) -->
+        <aside class="toc" aria-label="Table of contents">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#general-information" class="toc-link">1. General information</a></li>
+            <li><a href="#external-links" class="toc-link">2. External links disclaimer</a></li>
+            <li><a href="#professional-advice" class="toc-link">3. Not professional advice</a></li>
+            <li><a href="#affiliates" class="toc-link">4. Affiliates disclaimer</a></li>
+            <li><a href="#testimonials" class="toc-link">5. Testimonials disclaimer</a></li>
+            <li><a href="#errors-omissions" class="toc-link">6. Errors and omissions</a></li>
+            <li><a href="#fair-use" class="toc-link">7. Fair use disclaimer</a></li>
+            <li><a href="#views-expressed" class="toc-link">8. Views expressed</a></li>
+            <li><a href="#consent" class="toc-link">9. Consent</a></li>
+            <li><a href="#updates" class="toc-link">10. Updates</a></li>
+            <li><a href="#contact" class="toc-link">11. Contact us</a></li>
+          </ul>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.3rem;">
+            <span class="logo-mark">◈</span>
+            <span class="logo-text">Hidden <em>Room</em> Stories</span>
+          </div>
+          <p>An independent editorial blog exploring interior design, architecture and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hidden Room Stories. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- Mobile menu toggle ---
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('open');
+        });
+      }
+
+      // --- Search bar toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBarWrap = document.getElementById('searchBarWrap');
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      if (searchToggle) {
+        searchToggle.addEventListener('click', function() {
+          searchBarWrap.classList.toggle('active');
+          if (searchBarWrap.classList.contains('active')) {
+            searchInput.focus();
+          }
+        });
+      }
+
+      // --- Search (dummy, redirects to home with query for now) ---
+      if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const query = searchInput.value.trim();
+          if (query) {
+            alert('Searching for: "' + query + '"\n\n(In a live site this would show results.)');
+          }
+        });
+      }
+
+      // --- Smooth scroll for anchor links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // --- Sticky TOC highlighting (simple active class based on scroll) ---
+      const sections = document.querySelectorAll('.disclaimer-card h2[id]');
+      const tocLinks = document.querySelectorAll('.toc-link');
+
+      if (sections.length && tocLinks.length) {
+        function highlightToc() {
+          let currentId = '';
+          const scrollPos = window.scrollY + 120; // offset for sticky header
+
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollPos >= sectionTop) {
+              currentId = section.getAttribute('id');
+            }
+          });
+
+          tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + currentId) {
+              link.classList.add('active');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', highlightToc);
+        highlightToc(); // run once on load
+      }
+    });
+  </script>
+
+</body>
+</html>

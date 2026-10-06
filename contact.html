@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Hidden Room Stories</title>
+  <meta name="description" content="Get in touch with the editors of Hidden Room Stories. Questions, story tips, collaborations, or just to say hello — we read every message.">
+  <meta name="author" content="Hidden Room Stories Editorial">
+  <link rel="canonical" href="https://hiddenroomstories.com/contact.html">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Contact · Hidden Room Stories">
+  <meta property="og:description" content="Reach the editorial team behind Hidden Room Stories.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:url" content="https://hiddenroomstories.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Hidden Room Stories",
+    "description": "Contact the editorial team of Hidden Room Stories.",
+    "url": "https://hiddenroomstories.com/contact.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hidden Room Stories"
+    }
+  }
+  </script>
+
+  <style>
+    /* ---------- RESET & BASE (same as index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fbf9f7;
+      --paper-warm: #f5f1ed;
+      --rule: #e2ddd8;
+      --accent: #9b7b5c;
+      --accent-soft: #c9b29b;
+      --muted: #706b66;
+      --white: #ffffff;
+      --serif: "Georgia", "Times New Roman", "Palatino", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --sidebar-width: 320px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.1rem; font-family: var(--sans); font-weight: 600; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      color: var(--accent);
+      font-size: 1.9rem;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-weight: 500;
+    }
+
+    .logo-text em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      transition: color 0.2s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent-soft);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 30px;
+      padding: 0.4rem 1rem 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: border 0.2s, background 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent-soft);
+      background: var(--paper-warm);
+    }
+
+    .search-icon {
+      font-size: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.4rem 0.7rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar-wrap {
+      display: none;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+    }
+
+    .search-bar-wrap.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 600px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-form input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-form button {
+      padding: 0.7rem 1.6rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-form button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- PAGE MAIN ---------- */
+    .site-main {
+      padding: 3rem 0 5rem;
+    }
+
+    .page-header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Contact layout */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2.5rem 2.2rem;
+    }
+
+    .contact-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      transition: border 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(155, 123, 92, 0.1);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .form-check input {
+      margin-top: 0.3rem;
+      accent-color: var(--accent);
+    }
+
+    .form-check label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      padding: 0.9rem 2.2rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    /* Sidebar */
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .info-widget {
+      background: var(--paper-warm);
+      border-radius: 8px;
+      padding: 1.8rem 1.6rem;
+      border: 1px solid var(--rule);
+    }
+
+    .info-widget h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .info-widget p,
+    .info-widget li {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .info-widget ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-widget li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      color: var(--accent);
+      font-size: 1rem;
+      min-width: 1.2rem;
+      text-align: center;
+    }
+
+    .info-widget a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    .info-widget a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .editor-note {
+      background: var(--white);
+      border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.4rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .editor-note p {
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-bottom: 0;
+      color: var(--ink-soft);
+    }
+
+    .editor-note .sig {
+      display: block;
+      margin-top: 0.6rem;
+      font-style: normal;
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--rule);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      color: var(--muted);
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.85rem;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .contact-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 1.8rem 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        gap: 0.5rem;
+      }
+
+      .search-toggle {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+      }
+
+      .btn-primary {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* utils */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hidden Room Stories home">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Hidden <em>Room</em> Stories</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <span class="search-icon">⌕</span> Search
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar-wrap" id="searchBarWrap">
+    <div class="container">
+      <form class="search-form" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <h1>Let’s talk</h1>
+        <p class="subhead">Whether you have a story tip, a question about a project, or simply want to say hello — we read every message.</p>
+      </div>
+
+      <!-- Contact layout -->
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div class="contact-card">
+          <h2>Send a message</h2>
+          <p class="contact-intro">We usually reply within 2–3 working days. For urgent editorial matters, please mention “Urgent” in the subject line.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General enquiry</option>
+                <option value="story-tip">Story tip / pitch</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback on an article</option>
+                <option value="press">Press / media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us a little about what you have in mind…" required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I agree that my message may be stored and processed according to the <a href="privacy.html" style="color:var(--accent); text-decoration:underline;">privacy policy</a>.</label>
+            </div>
+
+            <button type="submit" class="btn-primary" id="submitBtn">Send message →</button>
+          </form>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="contact-sidebar" aria-label="Contact information and editorial note">
+
+          <div class="info-widget">
+            <h4>Editorial office</h4>
+            <ul>
+              <li>
+                <span class="info-icon">✉</span>
+                <span><a href="mailto:hello@hiddenroomstories.com">hello@hiddenroomstories.com</a></span>
+              </li>
+              <li>
+                <span class="info-icon">✎</span>
+                <span><a href="mailto:editors@hiddenroomstories.com">editors@hiddenroomstories.com</a> (story pitches)</span>
+              </li>
+              <li>
+                <span class="info-icon">⌂</span>
+                <span>Hidden Room Stories<br>14 Alder Lane, Studio 3<br>London, E2 8HD<br>United Kingdom</span>
+              </li>
+              <li>
+                <span class="info-icon">☏</span>
+                <span>+44 (0)20 7946 0132<br><span style="font-size:0.8rem; color:var(--muted);">Mon–Fri, 10am–5pm GMT</span></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-widget">
+            <h4>Follow along</h4>
+            <ul>
+              <li><span class="info-icon">◈</span> <a href="#">Instagram</a></li>
+              <li><span class="info-icon">◈</span> <a href="#">Pinterest</a></li>
+              <li><span class="info-icon">◈</span> <a href="#">LinkedIn</a></li>
+              <li><span class="info-icon">◈</span> <a href="#">Substack</a></li>
+            </ul>
+          </div>
+
+          <div class="editor-note">
+            <p>“We’re always curious about the quiet details — the overlooked corners, the materials that age gracefully, the plans that truly work. If you have a project or a thought to share, write to us.”</p>
+            <span class="sig">— Elena Marchetti, Editor</span>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.3rem;">
+            <span class="logo-mark">◈</span>
+            <span class="logo-text">Hidden <em>Room</em> Stories</span>
+          </div>
+          <p>An independent editorial blog exploring interior design, architecture and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hidden Room Stories. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- Mobile menu toggle ---
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('open');
+        });
+      }
+
+      // --- Search bar toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBarWrap = document.getElementById('searchBarWrap');
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      if (searchToggle) {
+        searchToggle.addEventListener('click', function() {
+          searchBarWrap.classList.toggle('active');
+          if (searchBarWrap.classList.contains('active')) {
+            searchInput.focus();
+          }
+        });
+      }
+
+      // --- Search (dummy, redirects to home with query for now) ---
+      if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const query = searchInput.value.trim();
+          if (query) {
+            // In a real site, redirect to search results page
+            alert('Searching for: "' + query + '"\n\n(In a live site this would show results.)');
+          }
+        });
+      }
+
+      // --- Contact form handling ---
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          // Basic validation
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const message = document.getElementById('message').value.trim();
+          const consent = document.getElementById('consent').checked;
+
+          if (!name || !email || !message || !consent) {
+            alert('Please fill in all required fields and accept the privacy notice.');
+            return;
+          }
+
+          // Simulate sending
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = 'Sending…';
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            submitBtn.textContent = 'Message sent ✓';
+            submitBtn.style.background = '#9b7b5c'; // accent colour
+            contactForm.reset();
+
+            setTimeout(() => {
+              submitBtn.textContent = originalText;
+              submitBtn.style.background = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          }, 1200);
+        });
+      }
+
+      // --- Smooth scroll for anchor links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

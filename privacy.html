@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Hidden Room Stories</title>
+  <meta name="description" content="Privacy policy for Hidden Room Stories — how we handle your data, cookies, and your rights.">
+  <meta name="author" content="Hidden Room Stories Editorial">
+  <link rel="canonical" href="https://hiddenroomstories.com/privacy.html">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Privacy Policy · Hidden Room Stories">
+  <meta property="og:description" content="How Hidden Room Stories collects, uses, and protects your personal information.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:url" content="https://hiddenroomstories.com/privacy.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — Hidden Room Stories",
+    "description": "Privacy policy for Hidden Room Stories, including data collection, cookies, and user rights.",
+    "url": "https://hiddenroomstories.com/privacy.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hidden Room Stories"
+    }
+  }
+  </script>
+
+  <style>
+    /* ---------- RESET & BASE (consistent with main site) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fbf9f7;
+      --paper-warm: #f5f1ed;
+      --rule: #e2ddd8;
+      --accent: #9b7b5c;
+      --accent-soft: #c9b29b;
+      --muted: #706b66;
+      --white: #ffffff;
+      --serif: "Georgia", "Times New Roman", "Palatino", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --sidebar-width: 320px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.1rem; font-family: var(--sans); font-weight: 600; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      color: var(--accent);
+      font-size: 1.9rem;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-weight: 500;
+    }
+
+    .logo-text em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      transition: color 0.2s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent-soft);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 30px;
+      padding: 0.4rem 1rem 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: border 0.2s, background 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent-soft);
+      background: var(--paper-warm);
+    }
+
+    .search-icon {
+      font-size: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.4rem 0.7rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar-wrap {
+      display: none;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+    }
+
+    .search-bar-wrap.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 600px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-form input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-form button {
+      padding: 0.7rem 1.6rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-form button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- PAGE MAIN (privacy specific) ---------- */
+    .site-main {
+      padding: 3rem 0 5rem;
+    }
+
+    .page-header {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    .privacy-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2.5rem 2.2rem;
+    }
+
+    .privacy-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      margin-top: 1.8rem;
+    }
+
+    .privacy-card h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-card h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    .privacy-card p,
+    .privacy-card li {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    .privacy-card ul,
+    .privacy-card ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .privacy-card li {
+      margin-bottom: 0.4rem;
+    }
+
+    .privacy-card a {
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      transition: border 0.2s;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .privacy-card a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .privacy-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .toc {
+      background: var(--paper-warm);
+      border-radius: 8px;
+      padding: 1.6rem 1.6rem;
+      border: 1px solid var(--rule);
+      position: sticky;
+      top: 100px;
+    }
+
+    .toc h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .toc a {
+      color: var(--ink-soft);
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+      border-left: 2px solid transparent;
+      padding-left: 0.5rem;
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+      border-left-color: var(--accent-soft);
+      padding-left: 0.8rem;
+    }
+
+    .toc .active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--rule);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      color: var(--muted);
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.85rem;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .privacy-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .privacy-card {
+        padding: 1.8rem 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        gap: 0.5rem;
+      }
+
+      .search-toggle {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    /* utils */
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hidden Room Stories home">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Hidden <em>Room</em> Stories</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <span class="search-icon">⌕</span> Search
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar-wrap" id="searchBarWrap">
+    <div class="container">
+      <form class="search-form" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-header">
+        <h1>Privacy Policy</h1>
+        <p class="subhead">How we collect, use, and protect your personal information — and the choices you have.</p>
+      </div>
+
+      <!-- Privacy layout: content + sticky TOC -->
+      <div class="privacy-layout">
+
+        <!-- Main content -->
+        <div class="privacy-card">
+          <div class="privacy-meta">
+            <span>Last updated: <strong>March 15, 2026</strong></span>
+            <span>Version 3.0</span>
+          </div>
+
+          <p>Hidden Room Stories ("we", "our", "us") respects your privacy and is committed to protecting your personal data. This policy explains what information we collect, how we use it, and your rights under applicable data protection laws, including the UK GDPR and the EU GDPR.</p>
+
+          <h2 id="information-we-collect">1. Information we collect</h2>
+          <p>We may collect and process the following categories of personal data:</p>
+          <ul>
+            <li><strong>Contact details</strong> — name, email address, and any information you provide when you fill out our contact form, subscribe to our newsletter, or correspond with us.</li>
+            <li><strong>Usage data</strong> — information about how you interact with our website, such as pages visited, time spent, referring URLs, and approximate location (country or city level). This is collected via cookies and similar technologies.</li>
+            <li><strong>Technical data</strong> — IP address, browser type and version, device type, operating system, and other technical identifiers.</li>
+            <li><strong>Communication preferences</strong> — your choices regarding marketing messages and content updates.</li>
+          </ul>
+
+          <h2 id="how-we-use">2. How we use your information</h2>
+          <p>We process your personal data for the following purposes:</p>
+          <ul>
+            <li>To respond to your enquiries, story pitches, and collaboration requests.</li>
+            <li>To send you editorial newsletters and updates (only if you have opted in).</li>
+            <li>To improve our website, content, and user experience.</li>
+            <li>To analyse site traffic and trends using aggregated, anonymised statistics.</li>
+            <li>To comply with legal obligations and enforce our terms.</li>
+          </ul>
+          <p>Our lawful bases for processing include your consent (for newsletters), our legitimate interests (to respond to messages and improve our site), and compliance with legal obligations.</p>
+
+          <h2 id="cookies">3. Cookies and similar technologies</h2>
+          <p>We use cookies and similar tracking technologies to enhance your browsing experience, analyse site traffic, and remember your preferences. Cookies are small text files stored on your device.</p>
+          <p>You can control and manage cookies in your browser settings. Please note that disabling certain cookies may affect the functionality of the site.</p>
+          <p>For detailed information, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+          <h2 id="sharing">4. Sharing your information</h2>
+          <p>We do not sell, rent, or trade your personal data. We may share your information with:</p>
+          <ul>
+            <li><strong>Service providers</strong> — trusted third parties who assist us with website hosting, analytics, email delivery, and other operational services, bound by confidentiality agreements.</li>
+            <li><strong>Legal authorities</strong> — when required by law or to protect our rights, property, or safety.</li>
+          </ul>
+          <p>All third-party service providers are required to respect the security of your personal data and to treat it in accordance with the law.</p>
+
+          <h2 id="data-retention">5. Data retention</h2>
+          <p>We retain your personal data only for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+          <p>Contact form submissions are typically retained for 24 months, after which they are deleted. Newsletter subscription data is retained until you unsubscribe.</p>
+
+          <h2 id="your-rights">6. Your rights</h2>
+          <p>Under data protection law, you have rights including:</p>
+          <ul>
+            <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+            <li><strong>Rectification</strong> — request correction of inaccurate or incomplete data.</li>
+            <li><strong>Erasure</strong> — request deletion of your personal data in certain circumstances.</li>
+            <li><strong>Restriction</strong> — request that we limit the processing of your data.</li>
+            <li><strong>Objection</strong> — object to processing based on legitimate interests.</li>
+            <li><strong>Portability</strong> — request transfer of your data to another organisation.</li>
+            <li><strong>Withdraw consent</strong> — withdraw your consent at any time where processing is based on consent.</li>
+          </ul>
+          <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@hiddenroomstories.com">privacy@hiddenroomstories.com</a>. We will respond within 30 days.</p>
+
+          <h2 id="security">7. Security</h2>
+          <p>We have implemented appropriate technical and organisational measures to protect your personal data from unauthorised access, alteration, disclosure, or destruction. These measures include encryption, access controls, and regular security reviews.</p>
+          <p>However, no method of transmission over the internet or electronic storage is completely secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+          <h2 id="international">8. International transfers</h2>
+          <p>Your data may be transferred to, and stored at, locations outside your country of residence. Where we transfer data outside the UK or EEA, we ensure appropriate safeguards are in place, such as standard contractual clauses approved by the relevant authorities.</p>
+
+          <h2 id="children">9. Children's privacy</h2>
+          <p>Our website is not intended for children under 16. We do not knowingly collect personal data from children. If you believe we have inadvertently collected such data, please contact us so we can delete it.</p>
+
+          <h2 id="changes">10. Changes to this policy</h2>
+          <p>We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. We will post the updated version on this page with a revised "last updated" date. We encourage you to review this page periodically.</p>
+
+          <h2 id="contact">11. Contact us</h2>
+          <p>If you have any questions about this privacy policy or our data practices, please contact our Data Protection Lead:</p>
+          <ul>
+            <li>Email: <a href="mailto:privacy@hiddenroomstories.com">privacy@hiddenroomstories.com</a></li>
+            <li>Post: Hidden Room Stories, 14 Alder Lane, Studio 3, London, E2 8HD, United Kingdom</li>
+          </ul>
+          <p>You also have the right to lodge a complaint with your local data protection authority. In the UK, this is the Information Commissioner's Office (<a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>).</p>
+
+          <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted);"><em>By using our website, you acknowledge that you have read and understood this privacy policy.</em></p>
+        </div>
+
+        <!-- Sidebar: Table of Contents (sticky) -->
+        <aside class="toc" aria-label="Table of contents">
+          <h4>On this page</h4>
+          <ul>
+            <li><a href="#information-we-collect" class="toc-link">1. Information we collect</a></li>
+            <li><a href="#how-we-use" class="toc-link">2. How we use your information</a></li>
+            <li><a href="#cookies" class="toc-link">3. Cookies &amp; similar technologies</a></li>
+            <li><a href="#sharing" class="toc-link">4. Sharing your information</a></li>
+            <li><a href="#data-retention" class="toc-link">5. Data retention</a></li>
+            <li><a href="#your-rights" class="toc-link">6. Your rights</a></li>
+            <li><a href="#security" class="toc-link">7. Security</a></li>
+            <li><a href="#international" class="toc-link">8. International transfers</a></li>
+            <li><a href="#children" class="toc-link">9. Children's privacy</a></li>
+            <li><a href="#changes" class="toc-link">10. Changes to this policy</a></li>
+            <li><a href="#contact" class="toc-link">11. Contact us</a></li>
+          </ul>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.3rem;">
+            <span class="logo-mark">◈</span>
+            <span class="logo-text">Hidden <em>Room</em> Stories</span>
+          </div>
+          <p>An independent editorial blog exploring interior design, architecture and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Policy</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hidden Room Stories. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- Mobile menu toggle ---
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('open');
+        });
+      }
+
+      // --- Search bar toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBarWrap = document.getElementById('searchBarWrap');
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      if (searchToggle) {
+        searchToggle.addEventListener('click', function() {
+          searchBarWrap.classList.toggle('active');
+          if (searchBarWrap.classList.contains('active')) {
+            searchInput.focus();
+          }
+        });
+      }
+
+      // --- Search (dummy, redirects to home with query for now) ---
+      if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const query = searchInput.value.trim();
+          if (query) {
+            alert('Searching for: "' + query + '"\n\n(In a live site this would show results.)');
+          }
+        });
+      }
+
+      // --- Smooth scroll for anchor links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // --- Sticky TOC highlighting (simple active class based on scroll) ---
+      const sections = document.querySelectorAll('.privacy-card h2[id]');
+      const tocLinks = document.querySelectorAll('.toc-link');
+
+      if (sections.length && tocLinks.length) {
+        function highlightToc() {
+          let currentId = '';
+          const scrollPos = window.scrollY + 120; // offset for sticky header
+
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollPos >= sectionTop) {
+              currentId = section.getAttribute('id');
+            }
+          });
+
+          tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + currentId) {
+              link.classList.add('active');
+            }
+          });
+        }
+
+        window.addEventListener('scroll', highlightToc);
+        highlightToc(); // run once on load
+      }
+    });
+  </script>
+
+</body>
+</html>

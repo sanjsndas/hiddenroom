@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Hidden Room Stories</title>
+  <meta name="description" content="About Hidden Room Stories — an independent editorial blog on interior design, architecture, and the art of living well. Meet the editor and our editorial philosophy.">
+  <meta name="author" content="Hidden Room Stories Editorial">
+  <link rel="canonical" href="https://hiddenroomstories.com/about.html">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="About · Hidden Room Stories">
+  <meta property="og:description" content="Independent blog on interior design, architecture, materials, and the art of living well.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:url" content="https://hiddenroomstories.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Hidden Room Stories",
+    "description": "About the independent interior design and architecture blog Hidden Room Stories.",
+    "url": "https://hiddenroomstories.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hidden Room Stories"
+    }
+  }
+  </script>
+
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #fbf9f7;
+      --paper-warm: #f5f1ed;
+      --rule: #e2ddd8;
+      --accent: #9b7b5c;
+      --accent-soft: #c9b29b;
+      --muted: #706b66;
+      --white: #ffffff;
+      --serif: "Georgia", "Times New Roman", "Palatino", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --sidebar-width: 320px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.1rem; font-family: var(--sans); font-weight: 600; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER (exact match) ---------- */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      color: var(--accent);
+      font-size: 1.9rem;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-weight: 500;
+    }
+
+    .logo-text em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      transition: color 0.2s;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent-soft);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 30px;
+      padding: 0.4rem 1rem 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: border 0.2s, background 0.2s;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent-soft);
+      background: var(--paper-warm);
+    }
+
+    .search-icon {
+      font-size: 1rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.4rem 0.7rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    /* SEARCH BAR */
+    .search-bar-wrap {
+      display: none;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+    }
+
+    .search-bar-wrap.active {
+      display: block;
+    }
+
+    .search-form {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 600px;
+    }
+
+    .search-form input {
+      flex: 1;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      transition: border 0.2s;
+    }
+
+    .search-form input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-form button {
+      padding: 0.7rem 1.6rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-form button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- MAIN LAYOUT ---------- */
+    .site-main {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-width);
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      margin-bottom: 3.5rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2.5rem;
+    }
+
+    .about-hero h1 {
+      margin-bottom: 1.5rem;
+      max-width: 800px;
+    }
+
+    .about-hero .lead {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 750px;
+      margin-bottom: 1rem;
+    }
+
+    .about-hero .byline {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ---------- PROFILE / EDITOR CARD ---------- */
+    .profile-card {
+      display: flex;
+      gap: 2rem;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2.5rem 0 3rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--paper-warm);
+      border: 2px solid var(--accent-soft);
+    }
+
+    .profile-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-info .role {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .profile-info p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* ---------- EDITORIAL VALUES ---------- */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    .value-item {
+      background: var(--paper-warm);
+      border-radius: 6px;
+      padding: 1.8rem 1.5rem;
+      border: 1px solid var(--rule);
+    }
+
+    .value-item .icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      display: block;
+      color: var(--accent);
+      font-family: var(--serif);
+    }
+
+    .value-item h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .value-item p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    /* ---------- TIMELINE / HISTORY ---------- */
+    .history-list {
+      list-style: none;
+      margin: 2rem 0;
+    }
+
+    .history-list li {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: baseline;
+    }
+
+    .history-year {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: var(--accent);
+      min-width: 70px;
+      font-weight: 500;
+    }
+
+    .history-text {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- SIDEBAR (match) ---------- */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+    }
+
+    .sidebar-widget {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1.8rem;
+    }
+
+    .sidebar-widget:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-widget h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .about-editor {
+      background: var(--paper-warm);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+
+    .about-editor p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .editor-signature {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+
+    .popular-list {
+      list-style: none;
+    }
+
+    .popular-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .popular-list li:last-child {
+      border-bottom: none;
+    }
+
+    .popular-number {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: var(--accent-soft);
+      min-width: 1.6rem;
+    }
+
+    .popular-list a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+
+    .popular-list a:hover {
+      color: var(--accent);
+    }
+
+    .popular-meta {
+      font-size: 0.7rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .newsletter-mini input {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+      background: var(--white);
+    }
+
+    .newsletter-mini button {
+      width: 100%;
+      padding: 0.6rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .newsletter-mini button:hover {
+      background: var(--accent);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tag-cloud span {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.7rem;
+      border: 1px solid var(--rule);
+      border-radius: 30px;
+      color: var(--muted);
+      transition: all 0.2s;
+      cursor: default;
+    }
+
+    .tag-cloud span:hover {
+      border-color: var(--accent-soft);
+      color: var(--ink);
+    }
+
+    /* ---------- NEWSLETTER BIG (match) ---------- */
+    .newsletter-big {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      margin: 3.5rem 0;
+      text-align: center;
+    }
+
+    .newsletter-big h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter-big p {
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-big form {
+      display: flex;
+      gap: 0.6rem;
+      max-width: 450px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .newsletter-big input {
+      flex: 1;
+      min-width: 220px;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid var(--rule);
+      border-radius: 40px;
+      font-size: 0.9rem;
+      background: var(--paper);
+    }
+
+    .newsletter-big button {
+      padding: 0.8rem 1.8rem;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 40px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .newsletter-big button:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- FOOTER (match) ---------- */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--rule);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      color: var(--muted);
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      font-size: 0.85rem;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .content-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        max-width: 100%;
+      }
+
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding: 1rem 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .profile-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-avatar {
+        width: 100px;
+        height: 100px;
+      }
+
+      .history-list li {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .newsletter-big form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .newsletter-big input {
+        min-width: unset;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-actions {
+        gap: 0.5rem;
+      }
+
+      .search-toggle {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    .hidden { display: none; }
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hidden Room Stories home">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Hidden <em>Room</em> Stories</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" style="color: var(--accent); border-bottom-color: var(--accent);">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Open search">
+          <span class="search-icon">⌕</span> Search
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-bar-wrap" id="searchBarWrap">
+    <div class="container">
+      <form class="search-form" id="searchForm" role="search">
+        <input type="search" id="searchInput" placeholder="Search articles, topics, ideas…" aria-label="Search articles">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main class="site-main">
+    <div class="container">
+      <div class="content-layout">
+
+        <!-- ---------- PRIMARY COLUMN ---------- -->
+        <div class="primary-column" id="primaryColumn">
+
+          <!-- ABOUT HERO -->
+          <article class="about-hero">
+            <h1>About Hidden Room Stories</h1>
+            <p class="lead">
+              We are an independent editorial journal exploring the quiet architecture of everyday life — interior design, materials, space planning, and the art of living well. Founded in 2019, our mission is to publish thoughtful, in-depth writing that helps you see your home with fresh eyes.
+            </p>
+            <p class="byline">By Elena Marchetti · Editor-in-Chief</p>
+          </article>
+
+          <!-- PROFILE CARD -->
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format&fit=crop&q=80" alt="Portrait of Elena Marchetti, editor-in-chief." width="120" height="120" loading="lazy">
+            </div>
+            <div class="profile-info">
+              <h3>Elena Marchetti</h3>
+              <div class="role">Founder & Editor-in-Chief</div>
+              <p>Elena is an architectural writer and former interior designer with over fifteen years of experience in residential practice. She founded <em>Hidden Room Stories</em> to create a space for slow, considered design journalism — away from trends and toward timeless principles.</p>
+              <p>Her writing has appeared in <em>Dwell</em>, <em>Architectural Digest</em>, and <em>Remodelista</em>. She lives in Copenhagen with her family.</p>
+            </div>
+          </div>
+
+          <!-- EDITORIAL VALUES -->
+          <h2>What We Believe</h2>
+          <p>Every article we publish is guided by a simple conviction: good design is a form of care. It begins with listening — to the site, to the climate, to the rhythms of the people who will inhabit the space.</p>
+          
+          <div class="values-grid">
+            <div class="value-item">
+              <span class="icon">◈</span>
+              <h4>Depth over speed</h4>
+              <p>We take time to research, interview, and refine. No clickbait, no listicles for the sake of volume.</p>
+            </div>
+            <div class="value-item">
+              <span class="icon">◇</span>
+              <h4>Practical wisdom</h4>
+              <p>Our guides are grounded in real-world constraints — budgets, dimensions, climate, and craft.</p>
+            </div>
+            <div class="value-item">
+              <span class="icon">◈</span>
+              <h4>Quiet aesthetics</h4>
+              <p>We celebrate restraint, material honesty, and spaces that support rather than dominate.</p>
+            </div>
+          </div>
+
+          <!-- HISTORY / TIMELINE -->
+          <h2>Our Story</h2>
+          <ul class="history-list">
+            <li>
+              <span class="history-year">2019</span>
+              <span class="history-text"><em>Hidden Room Stories</em> begins as a personal blog documenting a renovation of a 1920s apartment in Milan.</span>
+            </li>
+            <li>
+              <span class="history-year">2021</span>
+              <span class="history-text">The site expands to include contributions from architects, designers, and craftspeople across Europe and North America.</span>
+            </li>
+            <li>
+              <span class="history-year">2023</span>
+              <span class="history-text">We launch our weekly newsletter, now read by over 30,000 design enthusiasts.</span>
+            </li>
+            <li>
+              <span class="history-year">2025</span>
+              <span class="history-text">Our first print anthology, <em>The Quiet Architecture of Home</em>, is published by a small independent press.</span>
+            </li>
+            <li>
+              <span class="history-year">2026</span>
+              <span class="history-text">We continue to publish in-depth articles, guides, and interviews — always independent, always reader-supported.</span>
+            </li>
+          </ul>
+
+          <!-- HOW WE WORK / EDITORIAL POLICY -->
+          <h2>Editorial Independence</h2>
+          <p>
+            <em>Hidden Room Stories</em> is entirely independent. We do not accept sponsored content, and we do not publish advertorials disguised as editorial. Our recommendations are based on research, experience, and a genuine belief in the value of good design.
+          </p>
+          <p>
+            When we use affiliate links — which is rare — we disclose it clearly at the top of the article. The small commission we earn helps fund our writing, but it never influences our editorial judgement. We only link to products or materials we would specify ourselves.
+          </p>
+
+          <!-- NEWSLETTER BIG (match) -->
+          <div class="newsletter-big" id="newsletter">
+            <h2>Stories that help you live better</h2>
+            <p>Join our weekly newsletter for new articles, design wisdom, and practical guides — no spam, ever.</p>
+            <form id="newsletterForm">
+              <input type="email" placeholder="Your email address" aria-label="Email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- ---------- SIDEBAR ---------- -->
+        <aside class="sidebar" aria-label="Sidebar">
+
+          <!-- ABOUT EDITOR -->
+          <div class="sidebar-widget about-editor">
+            <h4>About the Editor</h4>
+            <p><strong>Elena Marchetti</strong> is an architectural writer and former interior designer. She founded <em>Hidden Room Stories</em> to explore the quiet details that make buildings feel human.</p>
+            <p class="editor-signature">— Elena</p>
+          </div>
+
+          <!-- POPULAR ARTICLES -->
+          <div class="sidebar-widget">
+            <h4>Most Read</h4>
+            <ul class="popular-list">
+              <li>
+                <span class="popular-number">01</span>
+                <div><a href="#">The 7 Most Common Lighting Mistakes (and How to Fix Them)</a><span class="popular-meta">12k reads</span></div>
+              </li>
+              <li>
+                <span class="popular-number">02</span>
+                <div><a href="#">Why Your Living Room Feels Unfinished (It’s Probably the Rug)</a><span class="popular-meta">9.8k reads</span></div>
+              </li>
+              <li>
+                <span class="popular-number">03</span>
+                <div><a href="#">A Beginner’s Guide to Reading Floor Plans</a><span class="popular-meta">8.5k reads</span></div>
+              </li>
+              <li>
+                <span class="popular-number">04</span>
+                <div><a href="#">The Psychology of Colour in Bedrooms</a><span class="popular-meta">7.2k reads</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- NEWSLETTER MINI -->
+          <div class="sidebar-widget newsletter-mini">
+            <h4>Weekly Digest</h4>
+            <p style="font-size:0.85rem; margin-bottom:0.8rem;">One thoughtful email every Friday.</p>
+            <form id="sidebarNewsletter">
+              <input type="email" placeholder="Email address" aria-label="Email address" required>
+              <button type="submit">Join</button>
+            </form>
+          </div>
+
+          <!-- TAGS -->
+          <div class="sidebar-widget">
+            <h4>Topics</h4>
+            <div class="tag-cloud">
+              <span>Lighting</span><span>Small Spaces</span><span>Materials</span><span>Colour</span><span>Floor Plans</span><span>Renovation</span><span>Furniture</span><span>Passive Design</span><span>Minimalism</span><span>Texture</span><span>Storage</span><span>Windows</span>
+            </div>
+          </div>
+
+          <!-- INFORMATION LINKS -->
+          <div class="sidebar-widget">
+            <h4>Information</h4>
+            <ul style="list-style:none; font-size:0.85rem; line-height:2;">
+              <li><a href="about.html">About Hidden Room Stories</a></li>
+              <li><a href="contact.html">Contact the editors</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="font-size:1.3rem;">
+            <span class="logo-mark">◈</span>
+            <span class="logo-text">Hidden <em>Room</em> Stories</span>
+          </div>
+          <p>An independent editorial blog exploring interior design, architecture and the art of living well. Published since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#interiors">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+            <li><a href="index.html#guides">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html#editorial">Editorial Policy</a></li>
+            <li><a href="about.html#contributors">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hidden Room Stories. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- Mobile menu toggle ---
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('open');
+        });
+      }
+
+      // --- Search bar toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBarWrap = document.getElementById('searchBarWrap');
+      const searchForm = document.getElementById('searchForm');
+      const searchInput = document.getElementById('searchInput');
+
+      if (searchToggle) {
+        searchToggle.addEventListener('click', function() {
+          searchBarWrap.classList.toggle('active');
+          if (searchBarWrap.classList.contains('active')) {
+            searchInput.focus();
+          }
+        });
+      }
+
+      // --- Search functionality (simple, no results on about page—but we keep consistent) ---
+      if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const query = searchInput.value.trim().toLowerCase();
+          if (!query) return;
+          // On about page we just alert or ignore. We'll keep it simple and do nothing visual.
+          alert('Search is available on the main journal pages.');
+        });
+      }
+
+      // --- Newsletter forms (prevent default and show message) ---
+      const newsletterForm = document.getElementById('newsletterForm');
+      const sidebarNewsletter = document.getElementById('sidebarNewsletter');
+
+      function handleNewsletter(e) {
+        e.preventDefault();
+        const form = e.target;
+        const input = form.querySelector('input[type="email"]');
+        if (input && input.value) {
+          const btn = form.querySelector('button');
+          const originalText = btn.textContent;
+          btn.textContent = 'Thanks!';
+          btn.disabled = true;
+          input.disabled = true;
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            input.disabled = false;
+            input.value = '';
+          }, 2500);
+        }
+      }
+
+      if (newsletterForm) newsletterForm.addEventListener('submit', handleNewsletter);
+      if (sidebarNewsletter) sidebarNewsletter.addEventListener('submit', handleNewsletter);
+
+      // --- Smooth scroll for anchor links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
